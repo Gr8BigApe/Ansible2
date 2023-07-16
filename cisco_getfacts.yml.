@@ -1,0 +1,10 @@
+---
+- hosts: all
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Gather all legacy facts
+      ios_facts:
+        gather_subset: hardware
+      tags:
+        - facts
