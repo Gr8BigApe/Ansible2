@@ -1,0 +1,17 @@
+---
+- name: 9300 Upgrade
+  hosts: switches
+  gather_facts: no
+  vars:
+    new_version: 17.06.05
+    new_file: "cat9k_iosxe.{{ new_version }}.SPA.bin"
+
+  tasks:
+    - name: Gather facts
+      cisco.ios.ios_facts:
+        gather_subset: hardware
+      register: facts_output
+    
+    - name: print output
+      debug:
+        msg: "Current Version is {{ facts_output['ansible_facts']['ansible_net_version'] 
