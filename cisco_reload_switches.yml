@@ -120,7 +120,7 @@
         - facts
     - name: Display some facts
       debug:
-        msg: "The hostname is {{ ansible_net_hostname }} and the OS is {{ ansible_net_version }}"
+        msg: "The hostname is {{ ansible_net_hostname }} and the OS is {{ ansible_net_version }} vs models[ansible_net_model]["ios_version"]"
     - name: Asset that the IOS version is the correct one
       assert:
         that:
