@@ -92,11 +92,10 @@
         - reload
     
     - name: Wait for the switch to return
-      wait_for:
-        host: "{{ ansible_host }}"
-        port: 22
+      wait_for_connection:
         delay: 180
-        timeout: 800
+        sleep: 60
+        timeout: 900
       delegate_to: localhost
       tags:
         - reload
