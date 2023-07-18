@@ -72,7 +72,7 @@
     - name: Email start of process on switch Name
       mail:
         subject: Reloading {{ inventory_hostname }}
-        host: my.smtp.local
+        host: outbound.mail.nc.gov
         port: 25
         to: 
           - travis.rich@dhhs.nc.gov
