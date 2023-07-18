@@ -1,5 +1,5 @@
 ---
-- hosts: sw_ios
+- hosts: all
   gather_facts: false
   models:
     "WS-C2960XR-48FPD-I":
