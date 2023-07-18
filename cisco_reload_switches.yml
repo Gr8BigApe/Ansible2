@@ -96,7 +96,7 @@
         host: "{{ ansible_host }}"
         port: 22
         delay: 180
-        timeout: 600
+        timeout: 800
       delegate_to: localhost
       tags:
         - reload
