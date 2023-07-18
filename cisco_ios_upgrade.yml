@@ -88,7 +88,7 @@
           tags:
             - flash
 
-        - name: Asset that there is enough flash space for upload
+        - name: Assert that there is enough flash space for upload
           assert:
             that:
               - ansible_net_filesystems_info['flash:']['spacefree_kb'] > models[ansible_net_model]["ios_size_kb"]
@@ -120,7 +120,7 @@
           tags:
             - flash
 
-        - name: Asset that IOS is present
+        - name: Assert that IOS is present
           assert:
             that:
               - models[ansible_net_model]["ios_archive"] in dir_flash.stdout[0]
@@ -139,7 +139,7 @@
           tags:
             - md5
 
-        - name: Asset that MD5Sums are identical
+        - name: Assert that MD5Sums are identical
           assert:
             that:
               - models[ansible_net_model]["ios_md5"] in md5_result.stdout[0]
@@ -170,7 +170,7 @@
       tags:
         - bootvar
 
-    - name: Asset that the boot path is set to the new IOS
+    - name: Assert that the boot path is set to the new IOS
       assert:
         that:
           models[ansible_net_model]["ios_binary"] in bootvar.stdout[0]
