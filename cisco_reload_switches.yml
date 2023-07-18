@@ -96,7 +96,6 @@
         delay: 180
         sleep: 60
         timeout: 900
-      delegate_to: localhost
       tags:
         - reload
         - check_online
