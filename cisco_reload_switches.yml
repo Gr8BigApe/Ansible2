@@ -112,7 +112,7 @@
     - name: Email switch name back online
       mail:
         subject: Back Online {{ inventory_hostname }}
-        host: my.smtp.local
+        host: outbound.mail.nc.gov
         port: 25
         to: 
           - travis.rich@dhhs.nc.gov
