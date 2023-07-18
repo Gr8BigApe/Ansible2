@@ -85,7 +85,7 @@
     - name: Reload Switch
       ios_command:
         commands:
-          - command: "reload"
+          - command: "reload\n"
             prompt: 'Proceed with reload? \[confirm\]'
             answer: '\r'
       tags:
