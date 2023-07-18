@@ -87,7 +87,7 @@
         commands:
           - command: "reload"
             prompt: 'Proceed with reload? \[confirm\]'
-            answer: '\r'
+            answer: '\y'
       tags:
         - reload
     
