@@ -73,8 +73,8 @@
         host: my.smtp.local
         port: 25
         to: 
-          - craig.armstrong@mydomain.local
-        from: ansible-reload@mydomain.local
+          - travis.rich@dhhs.nc.gov
+        from: ansible-reload@dhhs.nc.gov
       delegate_to: localhost
       tags:
         - email
@@ -114,8 +114,8 @@
         host: my.smtp.local
         port: 25
         to: 
-          - craig.armstrong@mydomain.local
-        from: ansible-reload@mydomain.local
+          - travis.rich@dhhs.nc.gov
+        from: ansible-reload@dhhs.nc.gov
       delegate_to: localhost
       tags:
         - email
