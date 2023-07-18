@@ -81,15 +81,7 @@
       tags:
         - email
         - reload
-    
-    - name: Create Lock File
-      file:
-        path: playbooks/file.lock
-        state: touch
-      tags:
-        - reload
-        - lock
-    
+  
     - name: Reload Switch
       ios_command:
         commands:
@@ -135,11 +127,3 @@
           - ansible_net_version = models[ansible_net_model]["ios_version"]
       tags:
         - facts
-    
-    - name: Delete Lock File
-      file:
-        path: playbooks/file.lock
-        state: absent
-      tags:
-        - reload
-        - lock
