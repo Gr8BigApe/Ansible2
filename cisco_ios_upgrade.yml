@@ -55,14 +55,14 @@
         ios_md5: "b2adbaa464d99191a0b786aae57dda97"
         ios_size_kb: 32439
       "WS-C2960X-24PSQ-L":
-        ios_version: "15.2(7)E0a"
+        ios_version: "15.2(7)E8"
         ios_path: "IOS/"
         ios_archive: "c2960x-universalk9-tar.152-7.E8.tar"
         ios_binary: "c2960x-universalk9-mz.152-7.E8.bin"
         ios_md5: "c03e2afaffd64f8bbc358d3531964778"
         ios_size_kb: 39649
-    server: "1.1.1.1"
-    protocol: "http"
+    server: "10.24.55.11"
+    protocol: "tftp"
 
   tasks:
     - name: Gather all legacy facts
