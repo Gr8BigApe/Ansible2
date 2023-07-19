@@ -131,7 +131,7 @@
           - command: 'delete flash:{{ models[ansible_net_model]["ios_archive"] }}'
             prompt:
               - 'Delete filename \[{{ models[ansible_net_model]["ios_archive"] }}\]?'
-              - 'Delete flash:\/{{ models[ansible_net_model]["ios_archive"] }}'
+              - 'Delete flash:/{{ models[ansible_net_model]["ios_archive"] }} \[confirm\]'
             answer:
               - "\r"
               - "\r"
