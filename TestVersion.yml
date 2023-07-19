@@ -70,6 +70,6 @@
     - name: Asset that the IOS version is the correct one
       assert:
         that:
-          - ansible_net_version = models[ansible_net_model]["ios_version"]
+          - ansible_net_version == models[ansible_net_model]["ios_version"]
       tags:
         - facts
