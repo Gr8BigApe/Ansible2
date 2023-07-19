@@ -60,6 +60,7 @@
         ios_binary: "c2960x-universalk9-mz.152-7.E8.bin"
         ios_md5: "c03e2afaffd64f8bbc358d3531964778"
         ios_size_kb: 39649
+  tasks:
     - name: Gather all legacy facts
       ios_facts:
         gather_subset: hardware
