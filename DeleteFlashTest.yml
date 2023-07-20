@@ -79,4 +79,4 @@
             answer:
               - "\r"
               - "\r"
-        register: flash_output
+      register: flash_output
