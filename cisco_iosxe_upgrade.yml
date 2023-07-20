@@ -3,6 +3,7 @@
   hosts: all
   gather_facts: no
   vars:
+    tftp_ip: 10.10.10.10
     new_version: 17.11.01
     new_file: "cat9k_lite_iosxe.{{ new_version }}.SPA.bin"
 
@@ -49,7 +50,7 @@
       - name: Copy IOS image via FTP
         cisco.ios.ios_command:
           commands:
-            - command: "copy ftp://{{ ftp_username }}:{{ ftp_password }}@{{ ftp_ip }}/{{ new_file }} flash:{{ new_file }} vrf Mgmt-vrf"
+            - command: "copy tftp://{{ tftp_ip }}/iosxe/{{ new_file }} flash:{{ new_file }}"
               prompt:
                 - 'Destination filename [{{ new_file }}]?'
               answer:
