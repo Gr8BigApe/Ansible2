@@ -1,9 +1,9 @@
 ---
 - name: 9300 Upgrade
-  hosts: switches
+  hosts: all
   gather_facts: no
   vars:
-    new_version: 17.06.05
+    new_version: 17.11.01
     new_file: "cat9k_iosxe.{{ new_version }}.SPA.bin"
 
   tasks:
