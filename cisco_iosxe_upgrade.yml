@@ -4,7 +4,7 @@
   gather_facts: no
   vars:
     new_version: 17.11.01
-    new_file: "cat9k_iosxe.{{ new_version }}.SPA.bin"
+    new_file: "cat9k_lite_iosxe.{{ new_version }}.SPA.bin"
 
   tasks:
     - name: Gather facts
