@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: no
   vars:
-    tftp_ip: 10.10.10.10
+    tftp_ip: 10.24.55.11
     new_version: 17.11.01
     new_file: "cat9k_lite_iosxe.{{ new_version }}.SPA.bin"
 
