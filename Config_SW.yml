@@ -1,0 +1,13 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: configure top level configuration
+      ios_config:
+         lines: hostname {{ hostname }}
+  tasks:
+    - name: Domain name
+      cisco.ios.ios_config:
+        lines:
+        - ip domain name {{domain_name}}
+  
