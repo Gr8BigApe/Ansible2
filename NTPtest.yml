@@ -1,0 +1,13 @@
+---
+- hosts: all
+  gather_facts: false
+    tasks:
+      - name: Configure NTP Servers
+        cisco.ios.ios_ntp_global:
+          config:
+            servers:
+              - server: "{{ ntp_servers.0 }}"
+              - server: "{{ ntp_servers.1 }}"
+              - server: "{{ ntp_servers.2 }}"
+            source: "{{ management_loopback  }}"
+        state: merged
