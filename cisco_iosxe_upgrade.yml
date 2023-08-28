@@ -1,5 +1,5 @@
 ---
-- name: 9300 Upgrade
+- name: IOS-XE Upgrade
   hosts: all
   gather_facts: no
   vars:
