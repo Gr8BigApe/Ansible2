@@ -6,3 +6,10 @@
     cisco.ios.ios_l2_interfaces:
       config:
       state: gathered
+    register: l2_interfaces
+  - name: List Interfaces
+    debug:
+      msg: "Interfaces {{l2_interfaces | type_debug}}"  
+  - name: List l2_Interfaces.gathered
+    debug:
+      msg: "l2_interfaces.gathered {{l2_interfaces.gathered | type_debug}}"
