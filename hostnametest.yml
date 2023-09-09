@@ -10,7 +10,7 @@
         #- ansible.com
         #- redhat.com
         #- cisco.com
-      lookup_enabled: true
+      lookup_enabled: false
 
     #- name: configure top level configuration
     #  ios_config:

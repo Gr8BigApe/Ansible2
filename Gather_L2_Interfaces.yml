@@ -1,0 +1,8 @@
+---
+- hosts: all
+  gather_facts: false
+
+  - name: Gather facts for l2 interfaces
+    cisco.ios.ios_l2_interfaces:
+      config:
+      state: gathered
